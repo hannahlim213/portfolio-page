@@ -4,36 +4,33 @@
 <head>
     <meta charset="utf-8" />
     <title>Personal Porftolio - Hannah Lim</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- reset -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Animate CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase|Pangolin" rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css?family=Bitter|IBM+Plex+Mono" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-
     <header>
-        <nav class="nav navbar-default navbar-fixed-top">
+        <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link nav-button" href="index.html">HOME</a>
-                                <a class="nav-item nav-link nav-button" href="contact.html">CONTACT ME</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+                <h1 class="display-4 animated fadeInLeft">Hello there!</h1>
+                <p id="intro" class="lead intro animated fadeInRight"> My name is Hannah and I like to create websites. I grew up in Jakarta and came to the U.S. for my business
+                    degree and to learn full-stack development. I also like to play touch rugby, soccer, and go snowboarding!</p>
             </div>
-        </nav>
+        </div>
+        <!-- <div class="animated fadeInLeft">
+            <h5>Hello there! My name is Hannah.</h5>
+        </div> -->
     </header>
 
     <div class="container">
@@ -41,7 +38,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div>
-                    <img class="img-fluid" src="assets/images/worldmap2.png" height="300px">
+                    <!-- <img class="img-fluid" src="assets/images/worldmap2.png" height="300px"> -->
                     <!-- <div class="flags">
                         <img id="indo-flag" src="assets/images/IndoFlag.png" height="50px">
                         <img id="indiana-flag" src="assets/images/IndianaFlag.png" height="50px">
@@ -53,16 +50,14 @@
             </div>
         </div>
 
-        <div class="typewriter">
-            <h1>Hello there! My name is Hannah.</h1>
-        </div>
-<hr>
-        <h2 class="head-title" id="portfolio-section">Portfolio</h2>
+
+        <hr>
+        <h2 class="revealOnScroll head-title" id="portfolio-section" data-animation="lightSpeedIn">Portfolio</h2>
         <hr class="botm-line">
 
         <div class="row">
             <div class="col-sm-6">
-                <div class="card">
+                <div class="card animated flipInX">
                     <div class="card-body">
                         <h5 class="card-title">MoveMe</h5>
                         <p class="card-text">Find and support your local community and political itnerests.</p>
@@ -71,7 +66,7 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="card">
+                <div class="card animated flipInX">
                     <div class="card-body">
                         <h5 class="card-title">GifTastic</h5>
                         <p class="card-text">Animal themed gify searcher, but you can search for any gif you'd like.</p>
@@ -80,7 +75,8 @@
                 </div>
             </div>
         </div>
-
+        <br>
+        <br>
         <!--  
     <div class="col-md-9 col-sm-12">
         <div class="col-md-4 col-sm-6">
@@ -97,10 +93,51 @@
             <img id="portfolio-images" src="assets/images/Travel.jpg" height=200 class="img-responsive">
         </div>
     </div> -->
+    <hr>
+    <h2 class="revealOnScroll head-title" id="contact-section" data-animation="lightSpeedIn">Contact</h2>
+    <hr class="botm-line">
 
+    <div class="container">
+            <div class= "row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <br><br>
+                <form id="contact" action="" method="post">
+                    <h3>Please email me at
+                        <a href="mailto: hannah15198@gmail.com" type="email">hannah15198@gmail.com</a>
+                    </h3>
+            </div>
+            <div class="col-md-2"></div>
+    
+            <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+    
+                    <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+    
+                    <fieldset>
+                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                    </fieldset>
+    
+                    <fieldset>
+                        <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                    </fieldset>
+    
+                    <fieldset>
+                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                    </fieldset>
+    
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </div>
     <!-- end of container div -->
-
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </body>
 
 </html>
