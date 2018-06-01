@@ -13,7 +13,7 @@
     <!-- Animate CSS  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <!-- google fonts -->
-    <link <link href="https://fonts.googleapis.com/css?family=Bitter|IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|IBM+Plex+Mono" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,9 +23,11 @@
     <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
+                <img id="profile-image" src="assets/images/Profile-image.JPG" alt="Profile Image">
                 <h1 class="display-4 animated fadeInLeft">Hello there!</h1>
-                <p id="intro" class="lead intro animated fadeInRight"> My name is Hannah and I like to create websites. I grew up in Jakarta and came to the U.S. for my business
-                    degree and to learn full-stack development. I also like to play touch rugby, soccer, and go snowboarding!</p>
+                <p id="intro" class="lead intro animated fadeInRight"> My name is Hannah and I am a beginner full-stack developer. I grew up in Jakarta and came to the U.S. for
+                    my business degree and I am currently taking a full-stack development course. I also like to play touch
+                    rugby, soccer, and go snowboarding!</p>
             </div>
         </div>
         <!-- <div class="animated fadeInLeft">
@@ -52,7 +54,7 @@
 
 
         <hr>
-        <h2 class="revealOnScroll head-title" id="portfolio-section" data-animation="lightSpeedIn">Portfolio</h2>
+        <h2 class="revealOnScroll head-title" id="portfolio-section" data-animation="lightSpeedIn">My Projects</h2>
         <hr class="botm-line">
 
         <div class="row">
@@ -75,8 +77,29 @@
                 </div>
             </div>
         </div>
+
         <br>
-        <br>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card animated flipInX">
+                    <div class="card-body">
+                        <h5 class="card-title">Phsycic Game</h5>
+                        <p class="card-text">Test your phsycic abilities and guess the letter the computer has in mind. </p>
+                        <a href="https://hannahlim213.github.io/Psychic-Game/" class="btn btn-primary">Take me to Psychic Game</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card animated flipInX">
+                    <div class="card-body">
+                        <h5 class="card-title">Crystal Game</h5>
+                        <p class="card-text">Click on a crystal until your number matches the given number.</p>
+                        <a href="https://hannahlim213.github.io/unit-4-game/" class="btn btn-primary">Take me to Crystal Game</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--  
     <div class="col-md-9 col-sm-12">
         <div class="col-md-4 col-sm-6">
@@ -93,51 +116,42 @@
             <img id="portfolio-images" src="assets/images/Travel.jpg" height=200 class="img-responsive">
         </div>
     </div> -->
-    <hr>
-    <h2 class="revealOnScroll head-title" id="contact-section" data-animation="lightSpeedIn">Contact</h2>
-    <hr class="botm-line">
+        <hr>
+        <h2 class="revealOnScroll head-title" id="contact-section" data-animation="lightSpeedIn">Lets get in touch!</h2>
+        <hr class="botm-line">
 
-    <div class="container">
-            <div class= "row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <br><br>
-                <form id="contact" action="" method="post">
-                    <h3>Please email me at
-                        <a href="mailto: hannah15198@gmail.com" type="email">hannah15198@gmail.com</a>
-                    </h3>
-            </div>
-            <div class="col-md-2"></div>
-    
-            <fieldset>
-                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                    </fieldset>
-    
-                    <fieldset>
-                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                    </fieldset>
-    
-                    <fieldset>
-                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-                    </fieldset>
-    
-                    <fieldset>
-                        <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-                    </fieldset>
-    
-                    <fieldset>
-                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-                    </fieldset>
-    
-                    <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                    </fieldset>
-                </form>
+        <div class="container">
+            <div class="row">
+                <h4>Please email me at
+                    <a href="mailto: hannah15198@gmail.com" type="email">hannah15198@gmail.com</a>
+                </h4>
+                
             </div>
         </div>
     </div>
+    <br>
+    <br>
+
+    <div class="card mb-3 text-center">
+
+        <div class="card-body">
+            <h5 class="card-title" id="social-title">Social Media Links</h5>
+
+            <img src="assets/images/social-media-02.png" height=50px href="#">
+            <img src="assets/images/social-media-03.png" height=50px href="#">
+            <img src="assets/images/social-media-04.png" height=50px href="#">
+
+            <p class="card-text">
+                <small class="text-muted">Looking forward to meeting you!</small>
+            </p>
+        </div>
+    </div>
+
+
     <!-- end of container div -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
 </body>
 
 </html>

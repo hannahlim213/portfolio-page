@@ -28,3 +28,24 @@ body{
 fieldset {
     display:inline-block;
 }
+
+#profile-image{
+    border-radius: 50%;
+    height:130px;
+}
+
+#contact-inputs{
+    align-content: center;
+}
+
+.head-title {
+ font-family:'bitter', serif;
+}
+
+h3{
+    font-family:'IBM Plex Mono',monospace;
+}
+
+#social-title{
+    font-family:'bitter', serif;
+}
