@@ -25,26 +25,44 @@ $(document).ready(function () {
         $(this).hide();
     })
 
-// introTextArr = ["web-developer.", "soccer player.", "touch rugby player.", "sweet potato fan."];
+    // introTextArr = ["web-developer.", "soccer player.", "touch rugby player.", "sweet potato fan."];
 
-// for(var i = 0; i<introTextArr.length; i++) {
-//     introText(introTextArr[i])
-// }
-var introText = function() {
-    window.setTimeout(function () {
-        $("#intro-text").text("web-developer.");
+    // for(var i = 0; i<introTextArr.length; i++) {
+    //     introText(introTextArr[i])
+    // }
+    var introText = function () {
         window.setTimeout(function () {
-            $("#intro-text").text("soccer player.");
-            window.setTimeout(function() {
-                $("#intro-text").text("touch rugby player.");
-                window.setTimeout(function() {
-                    $("#intro-text").text("sweet potato fan.");
+            $("#intro-text").text("web-developer.");
+            window.setTimeout(function () {
+                $("#intro-text").text("soccer player.");
+                window.setTimeout(function () {
+                    $("#intro-text").text("touch rugby player.");
+                    window.setTimeout(function () {
+                        $("#intro-text").text("sweet potato fan.");
+                    }, 1000)
                 }, 1000)
             }, 1000)
+        }, 2000)
+    }
+    introText()
+
+    
+    var fadeInTitle = function () {
+        
+
+        window.setTimeout(function () {
+           
+            $("#q1").addClass("fadeInLeft");
+            window.setTimeout(function () {
+                $("#q2").addClass("fadeInLeft");
+                window.setTimeout(function () {
+                    $("#q3").addClass("fadeInLeft");
+                }, 3000)
+            }, 2000)
         }, 1000)
-    }, 2000)
-}
-introText()
+    }
+
+    fadeInTitle();
     // window.setTimeout(function () {
     //     $("#intro-text").text("touch rugby player.");
     //     window.setTimeout(function () {

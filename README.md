@@ -21,6 +21,8 @@ No installation needed! Just open the page in your preferred browser.
 
 * [Google Fonts](https://fonts.google.com/) - Font repository
 
+* [Animate CSS](https://daneden.github.io/animate.css/) - Animations
+
 
 ## Author
 
