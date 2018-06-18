@@ -23,16 +23,32 @@
     <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
+
+                <!-- Navigation bar -->
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./bored.html">Bored?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">More About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Favorites</a>
+                    </li>
+                </ul>
+
+                <!-- profile image -->
                 <img id="profile-image" src="assets/images/Profile-image.JPG" alt="Profile Image">
+
+                <!-- introduction -->
                 <h1 class="display-4 animated fadeInLeft">Hello there!</h1>
-                <p id="intro" class="lead intro animated fadeInRight"> My name is Hannah and I am a beginner full-stack developer. I grew up in Jakarta and came to the U.S. for
-                    my business degree and I am currently taking a full-stack development course. I also like to play touch
-                    rugby, soccer, and go snowboarding!</p>
+                <p id="intro" class="lead intro animated fadeInRight"> My name is Hannah and I am a
+                    <span id="intro-text"> </span>
+                </p>
+
             </div>
         </div>
-        <!-- <div class="animated fadeInLeft">
-            <h5>Hello there! My name is Hannah.</h5>
-        </div> -->
+
     </header>
 
     <div class="container">
@@ -56,14 +72,36 @@
         <hr>
         <h2 class="revealOnScroll head-title" id="portfolio-section" data-animation="lightSpeedIn">My Projects</h2>
         <hr class="botm-line">
-
+        
         <div class="row">
+            <div class="col-sm-6">
+                <div class="card animated flipInX">
+                    <div class="card-body">
+                        <h5 class="card-title">JoboboFlow</h5>
+                        <p class="card-text">Trello dashboard for your job application status.</p>
+                        <a href="https://jobobo-flow.herokuapp.com/" class="btn btn-primary">Take me to JoboboFlow</a>
+                    </div>
+                </div>
+            </div>
             <div class="col-sm-6">
                 <div class="card animated flipInX">
                     <div class="card-body">
                         <h5 class="card-title">MoveMe</h5>
                         <p class="card-text">Find and support your local community and political itnerests.</p>
                         <a href="https://sun1devil.github.io/MoveMe/" class="btn btn-primary">Take me to MoveMe</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card animated flipInX">
+                    <div class="card-body">
+                        <h5 class="card-title">Eat-da-Sandwich</h5>
+                        <p class="card-text">A virtual sandwich eating application.</p>
+                        <a href="https://pure-hollows-62977.herokuapp.com/" class="btn btn-primary">Take me to Sandwiches</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +117,8 @@
         </div>
 
         <br>
-
+<button id="view-more-btn" type="button" class="btn btn-info center" data-toggle="collapse" data-target="#other-projects"> click here for more projects</button>
+<div id="other-projects" class="collapse">
         <div class="row">
             <div class="col-sm-6">
                 <div class="card animated flipInX">
@@ -100,6 +139,30 @@
                 </div>
             </div>
         </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card animated flipInX">
+                    <div class="card-body">
+                        <h5 class="card-title">LIRI</h5>
+                        <p class="card-text">LIRI is a Language Interpretation and Recognition Interface using the command line node app.</p>
+                        <a href="https://github.com/hannahlim213/LIRI" class="btn btn-primary">Take me to LIRI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card animated flipInX">
+                    <div class="card-body">
+                        <h5 class="card-title">FriendFinder</h5>
+                        <p class="card-text">Find your match based on a personality survey. FriendFinder is deployed using Heroku.</p>
+                        <a href="https://mighty-journey-64193.herokuapp.com/" class="btn btn-primary">Take me to FriendFinder</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <!--  
     <div class="col-md-9 col-sm-12">
         <div class="col-md-4 col-sm-6">
@@ -125,7 +188,7 @@
                 <h4>Please email me at
                     <a href="mailto: hannah15198@gmail.com" type="email">hannah15198@gmail.com</a>
                 </h4>
-                
+
             </div>
         </div>
     </div>
@@ -137,9 +200,18 @@
         <div class="card-body">
             <h5 class="card-title" id="social-title">Social Media Links</h5>
 
-           <a href="https://www.facebook.com/haneenthebean"> <img src="assets/images/social-media-02.png" height=50px></a>
-           <a href="https://www.linkedin.com/in/lim49/"><img src="assets/images/social-media-03.png" height=50px></a>
-           <a href="https://www.instagram.com/hannahzxc/"><img src="assets/images/social-media-04.png" height=50px ></a>
+            <a href="https://www.facebook.com/haneenthebean">
+                <img src="assets/images/social-media-02.png" height=50px>
+            </a>
+            <a href="https://www.linkedin.com/in/lim49/">
+                <img src="assets/images/social-media-03.png" height=50px>
+            </a>
+            <a href="https://www.instagram.com/hannahzxc/">
+                <img src="assets/images/social-media-04.png" height=50px>
+            </a>
+            <a href="https://github.com/hannahlim213">
+                <img src="assets/images/social-media-01.png" height=40px>
+            </a>
 
             <p class="card-text">
                 <small class="text-muted">Looking forward to meeting you!</small>
@@ -150,8 +222,17 @@
 
     <!-- end of container div -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <!-- firebase -->
-    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+ 
+    <!-- jQuery and javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

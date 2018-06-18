@@ -49,3 +49,15 @@ h3{
 #social-title{
     font-family:'bitter', serif;
 }
+
+#view-more-btn{
+    margin: 0 auto;
+    display: block;
+}
+
+#intro-text {
+    background-color: yellow;
+    padding: 3px;
+    border: 3px solid yellow;
+}
+

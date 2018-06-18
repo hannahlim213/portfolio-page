@@ -1,32 +1,56 @@
 $(document).ready(function () {
 
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBZUjo8deq5nWTz3B65XiZ9i2m7cNo9VMo",
-    authDomain: "portfolio-contact-6af4a.firebaseapp.com",
-    databaseURL: "https://portfolio-contact-6af4a.firebaseio.com",
-    projectId: "portfolio-contact-6af4a",
-    storageBucket: "portfolio-contact-6af4a.appspot.com",
-    messagingSenderId: "825521821033"
-  };
-  firebase.initializeApp(config);
+    var textArr = [
+        "full-stack developer",
+        "snowboarder",
+        "scuba diver",
+        "soccer player",
+        "touch rugby player"
+    ]
 
-var database = firebase.database();
+    // loop through textArr
+    for (var i = 0; i < textArr.length; i++) {
 
-$("#contact-submit").on("click", function (event){
-    event.preventDefault();
+        function introText() {
+            setInterval(function () {
+                $("#intro-text").text(textArr[i]), 3000
+            })
+        }
 
-    var contactName = $("#contact-name").val.trim();
-    var contactEmail = $("#contact-email").val.trim();
-    var contactPhone = $("#contact-phone").val.trim();
-    var contactMessage = $("#contact-message").val.trim();
 
-    databas.ref().push({
-        Name: contactName,
-        email: contactEmail,
-        phone: contactPhone,
-        message: contactMessage,
+    }
+
+
+    $("#view-more-btn").on("click", function () {
+        $(this).hide();
     })
-})
+
+// introTextArr = ["web-developer.", "soccer player.", "touch rugby player.", "sweet potato fan."];
+
+// for(var i = 0; i<introTextArr.length; i++) {
+//     introText(introTextArr[i])
+// }
+var introText = function() {
+    window.setTimeout(function () {
+        $("#intro-text").text("web-developer.");
+        window.setTimeout(function () {
+            $("#intro-text").text("soccer player.");
+            window.setTimeout(function() {
+                $("#intro-text").text("touch rugby player.");
+                window.setTimeout(function() {
+                    $("#intro-text").text("sweet potato fan.");
+                }, 1000)
+            }, 1000)
+        }, 1000)
+    }, 2000)
+}
+introText()
+    // window.setTimeout(function () {
+    //     $("#intro-text").text("touch rugby player.");
+    //     window.setTimeout(function () {
+    //         $("#intro-text").text("sweet potato fan.");
+    //     }, 2000)
+    // }, 0)
+
 })
 
