@@ -33,6 +33,7 @@ $(document).ready(function () {
     var introText = function () {
         window.setTimeout(function () {
             $("#intro-text").text("web-developer.");
+            // $("#intro-text").append("<span><img id='comp-emoji' height=45px src='../assets/images/emojis/comp.png'></span>")
             window.setTimeout(function () {
                 $("#intro-text").text("soccer player.");
                 window.setTimeout(function () {

@@ -26,15 +26,18 @@
 
                 <!-- Navigation bar -->
                 <ul class="nav justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link disabled" href="./index.html">Home</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./bored.html">Bored?</a>
+                        <a class="nav-link" href="./bored.html">Bored?</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./more-about.html">More About Me</a>
                     </li>
-                    <li class="nav-item">
+                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Favorites</a>
-                    </li>
+                    </li> -->
                 </ul>
 
                 <!-- profile image -->
@@ -72,7 +75,7 @@
         <hr>
         <h2 class="revealOnScroll head-title" id="portfolio-section" data-animation="lightSpeedIn">My Projects</h2>
         <hr class="botm-line">
-        
+
         <div class="row">
             <div class="col-sm-6">
                 <div class="card animated flipInX">
@@ -92,7 +95,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
         <br>
 
         <div class="row">
@@ -117,52 +120,53 @@
         </div>
 
         <br>
-<button id="view-more-btn" type="button" class="btn btn-info center" data-toggle="collapse" data-target="#other-projects"> click here for more projects</button>
-<div id="other-projects" class="collapse">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card animated flipInX">
-                    <div class="card-body">
-                        <h5 class="card-title">Phsycic Game</h5>
-                        <p class="card-text">Test your phsycic abilities and guess the letter the computer has in mind. </p>
-                        <a href="https://hannahlim213.github.io/Psychic-Game/" class="btn btn-primary">Take me to Psychic Game</a>
+        <button id="view-more-btn" type="button" class="btn btn-info center" data-toggle="collapse" data-target="#other-projects">
+        click here for more projects</button>
+        <div id="other-projects" class="collapse">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card animated flipInX">
+                        <div class="card-body">
+                            <h5 class="card-title">Phsycic Game</h5>
+                            <p class="card-text">Test your phsycic abilities and guess the letter the computer has in mind. </p>
+                            <a href="https://hannahlim213.github.io/Psychic-Game/" class="btn btn-primary">Take me to Psychic Game</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card animated flipInX">
+                        <div class="card-body">
+                            <h5 class="card-title">Crystal Game</h5>
+                            <p class="card-text">Click on a crystal until your number matches the given number.</p>
+                            <a href="https://hannahlim213.github.io/unit-4-game/" class="btn btn-primary">Take me to Crystal Game</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card animated flipInX">
-                    <div class="card-body">
-                        <h5 class="card-title">Crystal Game</h5>
-                        <p class="card-text">Click on a crystal until your number matches the given number.</p>
-                        <a href="https://hannahlim213.github.io/unit-4-game/" class="btn btn-primary">Take me to Crystal Game</a>
+
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card animated flipInX">
+                        <div class="card-body">
+                            <h5 class="card-title">LIRI</h5>
+                            <p class="card-text">LIRI is a Language Interpretation and Recognition Interface using the command line node app.</p>
+                            <a href="https://github.com/hannahlim213/LIRI" class="btn btn-primary">Take me to LIRI</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card animated flipInX">
+                        <div class="card-body">
+                            <h5 class="card-title">FriendFinder</h5>
+                            <p class="card-text">Find your match based on a personality survey. FriendFinder is deployed using Heroku.</p>
+                            <a href="https://mighty-journey-64193.herokuapp.com/" class="btn btn-primary">Take me to FriendFinder</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <br>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card animated flipInX">
-                    <div class="card-body">
-                        <h5 class="card-title">LIRI</h5>
-                        <p class="card-text">LIRI is a Language Interpretation and Recognition Interface using the command line node app.</p>
-                        <a href="https://github.com/hannahlim213/LIRI" class="btn btn-primary">Take me to LIRI</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card animated flipInX">
-                    <div class="card-body">
-                        <h5 class="card-title">FriendFinder</h5>
-                        <p class="card-text">Find your match based on a personality survey. FriendFinder is deployed using Heroku.</p>
-                        <a href="https://mighty-journey-64193.herokuapp.com/" class="btn btn-primary">Take me to FriendFinder</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
         <!--  
     <div class="col-md-9 col-sm-12">
         <div class="col-md-4 col-sm-6">
@@ -222,7 +226,7 @@
 
     <!-- end of container div -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
- 
+
     <!-- jQuery and javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
