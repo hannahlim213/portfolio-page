@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".dropdown-content").hide();
 
     var textArr = [
         "full-stack developer",
@@ -45,7 +46,13 @@ $(document).ready(function () {
             }, 1000)
         }, 2000)
     }
+
     introText()
+    
+    $("#intro-text").hover(function() {
+        $(".dropdown-content").show();
+        $(this).hide();
+    });
 
     
     var fadeInTitle = function () {
