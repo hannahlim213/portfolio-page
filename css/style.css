@@ -103,8 +103,13 @@ h3{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-/* .dropdown:hover .dropbtn {background-color: yellow;} */
-
-/* footer {
-    position: sticky;
-} */
+.carousel-item>img{
+    margin: 0 auto;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
