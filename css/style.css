@@ -18,12 +18,16 @@ fieldset {
 .jumbotron {
  background-image:url('/assets/images/worldmap2.png');
  font-family: 'bitter', serif;
+ padding-bottom: inherit;
 }
+
 
 #intro {
     animation-delay:1s;
     font-family: 'IBM Plex Mono',monospace;
 }
+
+
 
 .monoFont{
     animation-delay:1s;
@@ -79,13 +83,16 @@ h3{
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
+    /* right: 20px; */
+    /* top: 10px; */
+    width: 236px;
     background-color: yellow;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     left: 395px;
-    top: 266px;
+    top: -92px;
 }
 
 .dropdown-content p {
@@ -107,9 +114,7 @@ h3{
     margin: 0 auto;
 }
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: relative;
     width: 100%;
     text-align: center;
 }
