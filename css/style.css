@@ -1,8 +1,15 @@
 body{
     background-color:#D7E1E6;
-    background-image:url('/assets/images/worldmap2.png');
 }
 
+h3{
+    font-family:'IBM Plex Mono',monospace;
+}
+
+h5 {
+    font-family: 'IBM Plex Mono',monospace;
+    margin-bottom: 5px;
+}
 
 .botm-line {
     background-color: #2b2b2b;
@@ -11,31 +18,9 @@ body{
     display: inline-block;
 }
 
-fieldset {
-    padding-top: 5px;
-}
-
 .jumbotron {
- background-image:url('/assets/images/worldmap2.png');
  font-family: 'bitter', serif;
- padding-bottom: inherit;
-}
-
-
-#intro {
-    animation-delay:1s;
-    font-family: 'IBM Plex Mono',monospace;
-}
-
-
-
-.monoFont{
-    animation-delay:1s;
-    font-family: 'IBM Plex Mono',monospace;
-}
-
-fieldset {
-    display:inline-block;
+ padding-bottom: 15px;
 }
 
 #profile-image{
@@ -49,20 +34,8 @@ fieldset {
     margin: auto;
 }
 
-#contact-inputs{
-    align-content: center;
-}
-
 .head-title {
  font-family:'bitter', serif;
-}
-
-h3{
-    font-family:'IBM Plex Mono',monospace;
-}
-
-#social-title {
-    font-family:'bitter', serif;
 }
 
 #view-more-btn {
@@ -70,51 +43,23 @@ h3{
     display: block;
 }
 
-#intro-text {
-    background-color: yellow;
-    padding: 3px;
-    border: 3px solid yellow;
+#social-title {
+    font-family:'bitter', serif;
 }
 
-.intro-text {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: relative;
-    /* right: 20px; */
-    /* top: 10px; */
-    width: 236px;
-    background-color: yellow;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    left: 395px;
-    top: -92px;
-}
-
-.dropdown-content p {
-    color: black;
-    background-color:yellow;
-    text-align: center;
-    padding: 9px 46px;
-    margin-bottom:0px;
-    font-family: monospace;
-    border: .5px solid black;
-
-}
-
-.dropdown-content p:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.carousel-item>img{
-    margin: 0 auto;
-}
 footer {
     position: relative;
     width: 100%;
     text-align: center;
+}
+
+/* bored html */
+.carousel-item>img{
+    margin: 0 auto;
+}
+
+/* more-about html */
+.monoFont{
+    animation-delay:1s;
+    font-family: 'IBM Plex Mono',monospace;
 }
